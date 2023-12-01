@@ -62,7 +62,6 @@ export function checkZIP() {
   
     // Build the constraint checker
     const constraint = new RegExp(constraints[country][0], "");
-    console.log(constraint);
   
     // Check it!
     if (constraint.test(ZIPField.value)) {

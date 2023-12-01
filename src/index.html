@@ -7,7 +7,7 @@
     <title>Form Validation</title>
 </head>
 <body>
-    <form action="post" id="form">
+    <form id="form" target="_self" onsubmit="summonThumb();">
         <div class="inputPair">
             <label for="email">*Email:</label>
             <input type="email" required name="email" id="email">
@@ -36,7 +36,7 @@
             <label for="passwordCheck">*Confirm Password:</label>
             <input type="text" required name="passwordCheck" id="passwordCheck">
         </div>
-        <button id="submit">Submit</button>
+        <button id="submit" type="submit" value="submit">Submit</button>
     </form>
 </body>
 </html>

@@ -2,6 +2,15 @@
     --border-purple: rgba(147, 0, 245, 0.836);
 }
 
+/* dangrek-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Dangrek';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./../assets/fonts/dangrek-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -19,11 +28,14 @@ body {
     flex-direction: column;
     width: 60%;
     padding: 10% 0 ;
-    gap: 15px;
+    gap: 17.5px;
     background-color: rgb(235, 240, 255);
     color: rgb(217, 160, 255);
     font-weight: bold;
     margin: 50% 0;
+    min-width: 400px;
+    max-width: 600px;
+    min-height: 275px;
 }
 
 .inputPair {
@@ -52,4 +64,21 @@ body {
     margin-top: 12.5px;
     border-color: var(--border-purple);
     text-transform: capitalize;
+}
+
+.thanks {
+    font-family: "Dangrek";
+    font-size: 7rem;
+}
+
+@media (min-width: 1000px) {
+    #form {
+        gap: 25px;
+        padding: 7.5% 0;
+        width: 50%;
+    }
+    .inputPair {
+        width: 325px;
+        font-size: 1.1rem;
+    }
 }
