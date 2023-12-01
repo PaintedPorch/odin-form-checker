@@ -1,17 +1,15 @@
 {
-  "name": "odin-todo-list",
+  "name": "odin-form-checker",
   "version": "1.0.0",
-  "description": "My rendition of the TOP to-do list",
+  "description": "Odin Form Validation",
   "main": "./src/index.js",
-  "prettier": "prettier-airbnb-config",
   "scripts": {
     "build": "webpack --mode=development",
     "build-production": "webpack --mode=production",
     "start": "webpack --mode=development && webpack-dev-server --open --mode=development",
     "start-production": "webpack --mode=production && webpack-dev-server --open --mode=production",
     "lint": "eslint src --ext .js",
-    "deploy-demo": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages",
-    "format": "npx prettier --write ."
+    "deploy-demo": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,4 @@
+Make a form that collects your Email, Country, Zip Code, Password, and Password Confirmation. It should use live inline validation, this is highlighting a field red and making it green once the conditions is met, whilst it is red, if it is clicked it should show a helpful error message with the correct way to fill out the field. If the form is invalid upon submitting you should give a custom error message. If the submission goes right show a screen with a thumbs-up in it. Styling can be done using the :valid and :invalid pseudo-classes. 
+
+Funtions to use: (set up html and basic css first)
+-

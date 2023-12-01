@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form action="post" id="form">
+        <div class="inputPair">
+            <label for="email">*Email:</label>
+            <input type="email" required name="email" id="email">
+        </div>
+        <div class="inputPair">
+            <label for="country">*Country:</label>
+            <select required name="country" id="country">
+                <option value="default">Default</option>
+                <option value="angola">Angola</option>
+                <option value="algeria">Algeria</option>
+                <option value="austria">Austria</option>
+                <option value="australia">Australia</option>
+                <option value="armenia">Armenia</option>
+                <option value="argentina">Argentina</option>
+            </select>
+        </div>
+        <div class="inputPair">
+            <label for="zip">Zip:</label>
+            <input type="text" name="zip" id="zip">
+        </div>
+        <div class="inputPair">
+            <label for="password">*Password:</label>
+            <input type="text" required name="password" id="password">
+        </div>
+        <div class="inputPair">
+            <label for="passwordCheck">*Confirm Password:</label>
+            <input type="text" required name="passwordCheck" id="passwordCheck">
+        </div>
+        <button id="submit">Submit</button>
+    </form>
+</body>
+</html>

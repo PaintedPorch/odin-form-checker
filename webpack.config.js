@@ -1,7 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
-const PrettierPlugin = require("prettier-webpack-plugin");
 const path = require('path');
 
 module.exports = {
@@ -22,11 +21,10 @@ module.exports = {
       verbose: true
     }),
     new HtmlWebpackPlugin({
-      title: "Dotis",
+      title: "Form Checker",
       template: './src/index.html', // If using only one html file
       inject: 'body'
     }),
-    new PrettierPlugin()
   ],
   module: {
     rules: [
